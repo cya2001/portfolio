@@ -1,19 +1,21 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import {links} from "@/lib/data";
 import Link from "next/link";
 import classes from "./styles/header.module.css"
+import { ActiveSectionContext,useActiveSectionContext } from "@/context/active-section-context";
 
 
 
 export default function Header(){
 
-const [activeSection,setActiveSeaction] = useState('Home');
+  const {activeSection,setActiveSection} =  useActiveSectionContext();
+// const [activeSection,setActiveSeaction] = useState('Home');
 
-const handleLinkClick = (linkname:string)=>{
-  setActiveSeaction(linkname);
+const handleLinkClick = (linkname:any)=>{
+  setActiveSection(linkname);
 }
 
 useEffect(() => {
