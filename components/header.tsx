@@ -11,11 +11,12 @@ import { ActiveSectionContext,useActiveSectionContext } from "@/context/active-s
 
 export default function Header(){
 
-  const {activeSection,setActiveSection} =  useActiveSectionContext();
+  const {activeSection,setActiveSection,timeOfLastClick,setTimeOfLastClick} =  useActiveSectionContext();
 // const [activeSection,setActiveSeaction] = useState('Home');
 
 const handleLinkClick = (linkname:any)=>{
   setActiveSection(linkname);
+  setTimeOfLastClick(Date.now());
 }
 
 useEffect(() => {
