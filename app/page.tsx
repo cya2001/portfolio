@@ -2,9 +2,9 @@ import Experience from "@/components/experiences";
 import Intro from "@/components/intro";
 import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
-import Skills from "@/components/skills";
 import Contact from "@/components/contact";
-import Articles from '@/components/articles';
+import Intership from "@/components/intership";
+import Award from "@/components/award";
 
 
 export default function Home() {
@@ -13,9 +13,9 @@ export default function Home() {
       <Intro/>
       <SectionDivider/>
       <Experience/>
-      <Articles/>
+      <Intership/>
       <Projects/>
-      <Skills/>
+      <Award/>
       <Contact/>
     </main>
   )

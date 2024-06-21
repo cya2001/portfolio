@@ -1,0 +1,25 @@
+.project-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.carousel-wrapper{
+  width: 50rem;
+}
+.describe-card{
+  width: 50rem;
+  margin-top: 1.25rem;
+  position: relative;
+}
+.describe-card p{
+  font-size:1.25rem;
+  font-weight: 300;
+}
+
+.jump-tag{
+  position: absolute;
+  bottom: .625rem;
+  right: .625rem;
+}

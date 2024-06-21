@@ -5,6 +5,13 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import homeImg from '@/public/home.png';
+import home2Img from '@/public/homebanner.png';
+import searchImg from '@/public/search.png';
+import comapImg from '@/public/comap.svg';
+import apmcmImg from '@/public/apmcm.png';
+import hzauImg from '@/public/hzau.svg.png';
+// import moduleName from '@/public/';
 
 export const links = [
   {
@@ -12,24 +19,20 @@ export const links = [
     hash: "#home",
   },
   {
-    name: "About",
-    hash: "#about",
+    name: "Experience",
+    hash: "#experience",
   },
   {
-    name: "Articles",
-    hash: "#articles",
+    name: "Intetship",
+    hash: "#intership"
   },
   {
     name: "Projects",
     hash: "#projects",
   },
   {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
+    name: "Awards",
+    hash: "#awards",
   },
   {
     name: "Contact",
@@ -39,30 +42,79 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    title:"HZAU",
+    location:'武汉',
+    major:'计算机科学与技术',
+    duration:'2019.9-2023.8',
+    gpa:'3.79/4.00',
+    courses:'Data Structure, Computer Network, Deep Learning'
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    title:"HKU",
+    location:'Hong Kong',
+    major:'computer science',
+    duration:'2023.9-2025.7',
+    gpa:'NA',
+    courses:'Data Mining, Cyber Security'
   },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
-  },
+  
 ] as const;
+
+export const projectBanner = [
+  {
+    title: "home",
+    url: homeImg,   
+  },
+  {
+    title: "home2",
+    url:home2Img,   
+  },
+  {
+    title: "search",
+    url: searchImg,   
+  }
+
+] as const;
+// First prize for excellent academic performance 10/2022
+//  Honorable Mention in 2022 Mathematical Contest in Modeling 05/2022
+// ⚫ Excellent Prize in National Student New Media Competition 04/2022
+// ⚫ Second Prize in 2021 Asia and Pacific Mathematical Contest in Modeling 01/2022
+// ⚫ National Third Prize in 2021 Chinese University Big Data Challenge 01/2022
+// ⚫ Merit student of Huazhong Agricultural University 09/2021
+export const awards = [
+  {
+    title: "Honorable Mention in 2022 Mathematical Contest in Modeling",
+    date: "05/2022",
+    url: comapImg
+  },
+  {
+    title: "First prize for excellent academic performance",
+    date: "10/2022",
+    url: hzauImg
+  },
+  {
+    title: "Excellent Prize in National Student New Media Competition",
+    date: "04/2022",
+    url: hzauImg
+  },  
+  {
+    title: "Second Prize in 2021 Asia and Pacific Mathematical Contest in Modeling",
+    date: "01/2022",
+    url: apmcmImg
+  },
+  {
+    title: "National Third Prize in 2021 Chinese University Big Data Challenge",
+    date: "01/2022",
+    url: hzauImg
+  },
+  {
+    title: "Merit student of Huazhong Agricultural University",
+    date: "09/2021",
+    url: hzauImg
+  }
+
+] as const;
+
 
 export const projectsData = [
   {
