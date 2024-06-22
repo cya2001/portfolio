@@ -13,7 +13,7 @@ export default function Award() {
   const {ref} = useSectionInView('Awards')
 
   return (
-    <section id='award' ref={ref} style={{marginTop:20, width:"80rem"}}>
+    <section id='awards' ref={ref} style={{marginTop:20, width:"80rem"}}>
       <SectionHeading>Awards</SectionHeading>
        <Card >
         {

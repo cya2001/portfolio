@@ -5,9 +5,9 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
-import homeImg from '@/public/home.png';
-import home2Img from '@/public/homebanner.png';
-import searchImg from '@/public/search.png';
+import ptcgHomeImg from '@/public/ptcg-home.png';
+import ptcgDetailImg from '@/public/ptcg-detail.png';
+import ptcgSearchImg from '@/public/ptcg-search.png';
 import comapImg from '@/public/comap.svg';
 import apmcmImg from '@/public/apmcm.png';
 import hzauImg from '@/public/hzau.svg.png';
@@ -60,27 +60,7 @@ export const experiencesData = [
   
 ] as const;
 
-export const projectBanner = [
-  {
-    title: "home",
-    url: homeImg,   
-  },
-  {
-    title: "home2",
-    url:home2Img,   
-  },
-  {
-    title: "search",
-    url: searchImg,   
-  }
 
-] as const;
-// First prize for excellent academic performance 10/2022
-//  Honorable Mention in 2022 Mathematical Contest in Modeling 05/2022
-// ⚫ Excellent Prize in National Student New Media Competition 04/2022
-// ⚫ Second Prize in 2021 Asia and Pacific Mathematical Contest in Modeling 01/2022
-// ⚫ National Third Prize in 2021 Chinese University Big Data Challenge 01/2022
-// ⚫ Merit student of Huazhong Agricultural University 09/2021
 export const awards = [
   {
     title: "Honorable Mention in 2022 Mathematical Contest in Modeling",
@@ -118,26 +98,20 @@ export const awards = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    title: "PTCG Card Search Showcase Website",
+    description: "This project is to provide users with a convenient card search and display function, enabling them to search by Pokémon name and view related cards along with associated information.",
+    techstack: ['Vue3','Javascript','Pinia','ElementUI'],
+    showcase:[ptcgHomeImg,ptcgSearchImg,ptcgDetailImg],
+
   },
+
   {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    title: "Muti-Platform Browser Plug-in",
+    description: "This plugin necessitates users to explore various websites in order to acquire comprehensive and wide-ranging information, including current news, game updates, gamer dynamics, and more.",
+    techstack: ['Vue3','Javascript','Pinia','ElementUI'],
+    showcase:[ptcgHomeImg,ptcgSearchImg,ptcgDetailImg],    
   },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
-  },
+
 ] as const;
 
 export const skillsData = [
