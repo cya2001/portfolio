@@ -13,7 +13,7 @@ export default function Award() {
   const {ref} = useSectionInView('Awards')
 
   return (
-    <section id='awards' ref={ref} style={{marginTop:20, width:"80rem"}}>
+    <section id='awards' ref={ref} style={{marginTop:100, width:"80rem"}}>
       <SectionHeading>Awards</SectionHeading>
        <Card >
         {
@@ -23,7 +23,7 @@ export default function Award() {
                 <div className={classes['award-describe']}>
                   <h3 className={classes.title}>{item.title}</h3>
                   <p className={classes.date}>{item.date}</p>            
-                </div>
+                </div>  
                 <Image
                   src={item.url}
                   alt={item.title}
