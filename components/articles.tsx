@@ -7,7 +7,7 @@ import { useSectionInView } from '@/lib/hooks';
 
 export default function Articles() {
 
-  const {ref} = useSectionInView('Articles',0.6);
+  // const {ref} = useSectionInView('Articles',0.6);
   const [open,setOpen] = useState(false);
   const [selectArticle,setSelectArticle] = useState(Object);
 
@@ -22,7 +22,7 @@ export default function Articles() {
   return (
     <div className={classes['articles-wrapper']}
     id='articles'
-    ref={ref}
+    // ref={ref}
     >
       <Space direction="vertical" size="middle" className={classes['articles-space']}>
         {articleData.map((article, index) => (
