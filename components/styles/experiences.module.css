@@ -9,6 +9,18 @@
 
 }
 
-/* .cover{
-  
+.cover{
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  width: 18.75rem;
+
+}
+
+.cover:hover{
+  transform: scale(1.05);
+}
+
+/* .ant-card.ant-card-hoverable {
+  transform: scale(1.05);
+  box-shadow: 3px 3px red, -1em 0 .4em rgb(0, 45, 128);
 } */
+

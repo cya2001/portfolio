@@ -2,9 +2,9 @@
 import React, { useState } from 'react'
 import SectionHeading from './section-heading'
 import { useSectionInView } from '@/lib/hooks'
-import {Form,Input,Button,message} from 'antd';
+import {Form,Input,Button,notification} from 'antd';
 import {sendEmail} from '@/actions/sendEmail';
-import { Content } from 'next/font/google';
+
 
 const {TextArea} = Input;
 
@@ -12,7 +12,28 @@ export default function Contact() {
   const {ref} = useSectionInView('Contact');
   const [form] = Form.useForm();
   const [loading,setLoading] =useState(false);
-  // const
+  const [api, contextHolder] = notification.useNotification();
+
+
+  const notify = (message:string,description:string) =>{
+    if(message=='SUCCESS'){
+      api.info({
+        message:'SUCESS',
+        description:description,
+        placement:'top',
+        duration:4.5,
+      })
+    }else{
+      api.error({
+        icon:'x',
+        message:'FAIL',
+        description:description,
+        placement:'top',
+        duration:4.5
+      })
+    }
+  }
+
   const handleSumit = async(value:any) => {
     try {
       const {email,message} = value;
@@ -24,6 +45,8 @@ export default function Contact() {
       setLoading(true);
       await sendEmail({mailSubject,mailBody});
       form.resetFields();
+      notify('SUCCESS','Your message has been sent!')
+
     } catch (error) {
       console.error('send error',error)
     }finally{
@@ -78,8 +101,7 @@ export default function Contact() {
           </Button>
         </Form.Item>
       </Form>
-
-
+      {contextHolder}
     </div>
   )
 }
