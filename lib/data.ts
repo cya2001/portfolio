@@ -9,8 +9,9 @@ import ptcgHomeImg from '@/public/ptcg-home.png';
 import ptcgDetailImg from '@/public/ptcg-detail.png';
 import ptcgSearchImg from '@/public/ptcg-search.png';
 import comapImg from '@/public/comap.svg';
-import apmcmImg from '@/public/apmcm.png';
-import hzauImg from '@/public/hzau.svg.png';
+import apmcmImg from '@/public/t.png';
+import hzauImg from '@/public/hzau.png';
+import bdtImg from '@/public/bdt.png';
 // import moduleName from '@/public/';
 
 export const links = [
@@ -42,19 +43,19 @@ export const links = [
 
 export const experiencesData = [
   {
-    title:"HZAU",
+    title:"华中农业大学",
     location:'武汉',
     major:'计算机科学与技术',
-    duration:'2019.9-2023.8',
-    gpa:'3.79/4.00',
-    courses:'Data Structure, Computer Network, Deep Learning'
+    duration:'2019.9 ~ 2023.8',
+    gpa:'3.79 / 4.00',
+    courses:'数据结构，计算机网络，深度学习'
   },
   {
-    title:"HKU",
+    title:"The University of Hong Kong",
     location:'Hong Kong',
-    major:'computer science',
-    duration:'2023.9-2025.7',
-    gpa:'NA',
+    major:'Computer Science',
+    duration:'2023.9 ~ 2025.7',
+    gpa:'N/A',
     courses:'Data Mining, Cyber Security'
   },
   
@@ -85,7 +86,7 @@ export const awards = [
   {
     title: "National Third Prize in 2021 Chinese University Big Data Challenge",
     date: "01/2022",
-    url: hzauImg
+    url: bdtImg
   },
   {
     title: "Merit student of Huazhong Agricultural University",

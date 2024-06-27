@@ -27,9 +27,9 @@ export default function Award() {
                 <Image
                   src={item.url}
                   alt={item.title}
-                  width="170"
-                  height="170"
                   quality="100"
+                  style={{ width: '11.25rem', height: 'auto' }}
+                  priority={false} 
                 />
               </Flex>
             </Card.Grid>
