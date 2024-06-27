@@ -11,7 +11,7 @@ import hkuImg from '@/public/hku.png';
 import hzauImg from '@/public/hzau.png';
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience");
+  const { ref } = useSectionInView("Experience",0.4);
   // const { theme } = useTheme();
 
   return (

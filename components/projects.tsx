@@ -7,7 +7,7 @@ import {projectsData} from '@/lib/data';
 import Project from './project';
 
 export default function Projects() {
-  const {ref} = useSectionInView('Projects')
+  const {ref} = useSectionInView('Projects',0.3)
 
   return (
     

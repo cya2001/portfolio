@@ -9,7 +9,6 @@ export const sendEmail = async ({ mailSubject, mailBody }: SendEmailParams): Pro
   console.log(mailSubject, mailBody);
   var postmark = require("postmark");
   const client =  new postmark.ServerClient(process.env.POSTMARK_API_TOKEN);
-
   const mailOptions = {
     From: 'cyayu@connect.hku.hk',
     To: 'cyayu@connect.hku.hk',
