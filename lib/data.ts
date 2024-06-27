@@ -9,7 +9,7 @@ import ptcgHomeImg from '@/public/ptcg-home.png';
 import ptcgDetailImg from '@/public/ptcg-detail.png';
 import ptcgSearchImg from '@/public/ptcg-search.png';
 import comapImg from '@/public/comap.svg';
-import apmcmImg from '@/public/t.png';
+import apmcmImg from '@/public/apmcm.png';
 import hzauImg from '@/public/hzau.png';
 import bdtImg from '@/public/bdt.png';
 // import moduleName from '@/public/';
