@@ -4,16 +4,16 @@ import SectionHeading from './section-heading'
 import { Avatar, List, Space,Card ,Flex} from 'antd';
 import { useSectionInView } from '@/lib/hooks';
 import { intershipData } from '@/lib/data';
-import classes from './styles/intership.module.css';
+import classes from './styles/internship.module.css';
 import Image from 'next/image';
 
 export default function Intership() {
-  const {ref} = useSectionInView('Intership',0.2);
+  const {ref} = useSectionInView('Internship',0.2);
 
 
   return (
     <section id="intership" ref={ref} style={{marginTop:'2rem'}}>
-      <SectionHeading>My intership</SectionHeading>
+      <SectionHeading>My internship</SectionHeading>
       {
         intershipData.map((item,index)=>(
           <Card className={classes['card-wrapper']} key={index}>
@@ -32,11 +32,10 @@ export default function Intership() {
                   ))
                 }                
               </div>
-              <a href={item.link}>
-              <Image className={classes['intern-img']}
+              <a href={item.link} className={classes['intern-img']}>
+              <Image 
               src={item.imgUrl}
-              alt={item.title}
-              style={{width:'150px',height:'150px'}}>
+              alt={item.title}>
               
               </Image></a>
             </Flex>

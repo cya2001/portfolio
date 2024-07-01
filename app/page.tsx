@@ -3,7 +3,7 @@ import Intro from "@/components/intro";
 import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
 import Contact from "@/components/contact";
-import Intership from "@/components/intership";
+import Internship from "@/components/internship";
 import Award from "@/components/award";
 
 
@@ -13,7 +13,7 @@ export default function Home() {
       <Intro/>
       <SectionDivider/>
       <Experience/>
-      <Intership/>
+      <Internship/>
       <Projects/>
       <Award/>
       <Contact/>

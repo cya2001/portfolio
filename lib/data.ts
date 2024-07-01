@@ -12,7 +12,7 @@ import comapImg from '@/public/comap.svg';
 import apmcmImg from '@/public/apmcm.png';
 import hzauImg from '@/public/hzau.png';
 import bdtImg from '@/public/bdt.png';
-import { describe } from "node:test";
+import bullbImg from '@/public/bull-b.png';
 // import moduleName from '@/public/';
 
 export const links = [
@@ -25,8 +25,8 @@ export const links = [
     hash: "#experience",
   },
   {
-    name: "Intership",
-    hash: "#intership"
+    name: "Internship",
+    hash: "#internship"
   },
   {
     name: "Projects",
@@ -74,7 +74,7 @@ export const intershipData = [
       'd3',
     ],
     link:'https://www.bull-b.com/',
-    imgUrl:comapImg,
+    imgUrl:bullbImg,
   }
 
 ] as const;
