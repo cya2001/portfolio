@@ -13,29 +13,30 @@ export default function Award() {
   const {ref} = useSectionInView('Awards')
 
   return (
-    <section id='awards' ref={ref} style={{marginTop:100, width:"80rem"}}>
+    <section id='awards' ref={ref} style={{marginTop:'2rem'}}>
       <SectionHeading>Awards</SectionHeading>
-       <Card >
+       
+        <div className={classes['award-container']}>
         {
           awards.map((item,index)=>(
-            <Card.Grid key={index}>
-              <Flex justify='center' align='center'>
+              <Flex justify='center' align='center' key={index} className={classes['item-container']}>
                 <div className={classes['award-describe']}>
                   <h3 className={classes.title}>{item.title}</h3>
                   <p className={classes.date}>{item.date}</p>            
                 </div>  
                 <Image
+                  className={classes.image}
                   src={item.url}
                   alt={item.title}
                   quality="100"
-                  style={{ width: '11.25rem', height: 'auto' }}
+                  // style={{ width: '9.5rem', height: 'auto' }}
                   priority={false} 
                 />
               </Flex>
-            </Card.Grid>
           ))
         }
-      </Card>
+        </div>
+      
     </section>
   )
 }

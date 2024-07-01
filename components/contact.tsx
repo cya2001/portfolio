@@ -55,7 +55,7 @@ export default function Contact() {
   }
   
   return (
-    <div style={{marginTop:100}} ref = {ref} id='contact'>
+    <div style={{marginTop:'2rem'}} ref = {ref} id='contact'>
       <SectionHeading>Contact me</SectionHeading>
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}

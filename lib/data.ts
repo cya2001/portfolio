@@ -12,6 +12,7 @@ import comapImg from '@/public/comap.svg';
 import apmcmImg from '@/public/apmcm.png';
 import hzauImg from '@/public/hzau.png';
 import bdtImg from '@/public/bdt.png';
+import { describe } from "node:test";
 // import moduleName from '@/public/';
 
 export const links = [
@@ -61,6 +62,22 @@ export const experiencesData = [
   
 ] as const;
 
+export const intershipData = [
+  {
+    title:'BULL.B TECHNOLOGY LIMITED',
+    location:'Smart Space 3F, Level 9, Cyberport 3 Core F, 100 Cyberport Road, Cyberport, HK',
+    position:'Front-end Developer',
+    duration:'3rd June 2024 - 30th August 2024',
+    description:[
+      'd1',
+      'd2',
+      'd3',
+    ],
+    link:'https://www.bull-b.com/',
+    imgUrl:comapImg,
+  }
+
+] as const;
 
 export const awards = [
   {

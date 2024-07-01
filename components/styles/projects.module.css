@@ -3,15 +3,22 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+  max-width: 80rem; 
+  padding: 0 1rem;
 }
 
 .carousel-wrapper{
-  width: 50rem;
+  width: 100%;
+  max-width: 50rem;
+  box-shadow: 0 0 1rem ;
 }
 .describe-card{
-  width: 50rem;
+  width: 100%;
+  max-width: 50rem;
   margin-top: 1.25rem;
   position: relative;
+  
 }
 .describe-card p{
   font-size:1.25rem;
@@ -22,4 +29,16 @@
   position: absolute;
   bottom: .625rem;
   right: .625rem;
+}
+
+@media (max-width: 800px) {
+  .carousel-wrapper,
+  .describe-card {
+    width: 100%;
+    max-width: 40rem; 
+  }
+
+  .describe-card p {
+    font-size: 1rem; 
+  }
 }

@@ -1,12 +1,9 @@
 .exp-card-left{
-  width: 18.75rem;
-  
+
 }
 
 .exp-card-right{
-  width: 18.75rem;
   right: 10rem;
-
 }
 
 .cover{
@@ -19,8 +16,24 @@
   transform: scale(1.05);
 }
 
-/* .ant-card.ant-card-hoverable {
-  transform: scale(1.05);
-  box-shadow: 3px 3px red, -1em 0 .4em rgb(0, 45, 128);
-} */
+.image{
+  width: 11.25rem;
+  margin-left: 3.5rem;
+}
 
+@media (max-width: 500px) {
+  .cover{
+    width: 9rem;
+  }
+  .image{
+    width: 6rem;
+    margin-left: 1.25rem;
+    
+  }
+  .description{
+    font-size: 0.6rem;
+  } 
+  .exp-card-right{
+    right: 4rem;
+  }
+}

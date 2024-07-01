@@ -11,7 +11,7 @@ export default function Projects() {
 
   return (
     
-    <section id='projects' ref={ref} >
+    <section id='projects' ref={ref} style={{marginTop:'2rem'}}>
       <SectionHeading>My project</SectionHeading>
       <div>
         {

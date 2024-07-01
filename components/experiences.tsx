@@ -30,22 +30,27 @@ export default function Experience() {
                           <Image
                             alt="item.title"
                             src={item.title=='The University of Hong Kong'?hkuImg:hzauImg}
-                            style={{ width: '11.25rem', height: 'auto', marginLeft:'3.5rem' }}
+                            // style={{ width: '11.25rem', height: 'auto', marginLeft:'3.5rem' }}
                             quality={100}
                             priority={false}
+                            className={classes['image']}
                           />                          
                         </div>
                       }
-                      style={{right:`${index%2==0?'':'10rem'}`}}
+                      className={`${index%2===0? classes['exp-card-left']:classes['exp-card-right']}`}
+                      
                       >
-                      <p className="italic font-bold text-lg">{item.title}</p>
-                      <div className="leading-loose">
-                        <p>{item.location}</p>
-                        <p className="underline  decoration-2">{item.major}</p>
-                        <p className="tracking-wide">{item.duration}</p>
-                        <p>{item.gpa}</p>
-                        <p>{item.courses}</p>
+                      <div className={classes['description']}>
+                        <p className="italic font-bold">{item.title}</p>
+                        <div className="leading-loose">
+                          <p>{item.location}</p>
+                          <p className="underline  decoration-2">{item.major}</p>
+                          <p className="tracking-wide">{item.duration}</p>
+                          <p>{item.gpa}</p>
+                          <p>{item.courses}</p>
+                        </div>                        
                       </div>
+
                     </Card>
                   </div>
 
