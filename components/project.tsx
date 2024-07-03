@@ -36,6 +36,7 @@ export default function Project({
             width="2500"
             height="2500"
             quality="100"
+            priority={true}
           />
         ))
       }
