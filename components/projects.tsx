@@ -13,6 +13,12 @@ export default function Projects() {
     
     <section id='projects' ref={ref} style={{marginTop:'2rem'}}>
       <SectionHeading>My project</SectionHeading>
+      <div className="flex justify-center items-center">
+        <p style={{ fontStyle: 'italic', color: '#808080' }}>
+          Please refresh if the project carousel wasn't shown
+        </p>
+      </div>
+      <br/>
       <div>
         {
           projectsData.map((project,index)=>(

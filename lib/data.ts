@@ -8,6 +8,8 @@ import wordanalyticsImg from "@/public/wordanalytics.png";
 import ptcgHomeImg from '@/public/ptcg-home.png';
 import ptcgDetailImg from '@/public/ptcg-detail.png';
 import ptcgSearchImg from '@/public/ptcg-search.png';
+import pluginPopup from '@/public/plugin-popup.png';
+import pluginSetting from '@/public/plugin-setting.png';
 import comapImg from '@/public/comap.svg';
 import apmcmImg from '@/public/apmcm.png';
 import hzauImg from '@/public/hzau.png';
@@ -116,20 +118,18 @@ export const awards = [
 
 export const projectsData = [
   {
+    title: "Muti-Platform Info Integrating Browser Plug-in",
+    description: "The plugin is able to retrieve posts from various social media platforms in real time. It will integrate and present the information in a time-line format. This makes it easier for users to follow updates and grab valuable information.",
+    techstack: ['React','Javascript','Antd'],
+    showcase:[pluginPopup,pluginSetting],    
+  },
+  {
     title: "PTCG Card Search Showcase Website",
     description: "This project is to provide users with a convenient card search and display function, enabling them to search by Pokémon name and view related cards along with associated information.",
     techstack: ['Vue3','Javascript','Pinia','ElementUI'],
     showcase:[ptcgHomeImg,ptcgSearchImg,ptcgDetailImg],
 
   },
-
-  {
-    title: "Muti-Platform Browser Plug-in",
-    description: "This plugin necessitates users to explore various websites in order to acquire comprehensive and wide-ranging information, including current news, game updates, gamer dynamics, and more.",
-    techstack: ['Vue3','Javascript','Pinia','ElementUI'],
-    showcase:[ptcgHomeImg,ptcgSearchImg,ptcgDetailImg],    
-  },
-
 ] as const;
 
 export const skillsData = [
