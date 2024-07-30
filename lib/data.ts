@@ -71,9 +71,9 @@ export const intershipData = [
     position:'Front-end Developer',
     duration:'3rd June 2024 - 30th August 2024',
     description:[
-      'd1',
-      'd2',
-      'd3',
+      '- Scrolling list loading in Game Rooms interface and integrating API for Bot management and scheduling in the interface.',
+      '- Timeline visualisation in Active Timeslot Management, supporting complex cases where multiple timelines overlap.',
+      '- Drag-and-drop setup interaction in Auto Assigner Management for jumping between different layouts.'
     ],
     link:'https://www.bull-b.com/',
     imgUrl:bullbImg,
